@@ -1,0 +1,203 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/*Quick Food Nav and Home Banner Styling*/
+.qf-nav-head {
+    font-size: 33px;
+    color: red;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-nav-span-head {
+    font-size: 33px;
+    color: white;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-banner-section {
+    background-color: black;
+    margin-top: 66px;
+}
+
+.qf-banner-card-head {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-banner-card-para {
+    font-size: 17px;
+    color: white;
+    font-family: "Roboto";
+}
+
+.qf-banner-card-btn {
+    height: 33px;
+    font-size: 14px;
+    color: white;
+    font-family: "Roboto";
+    background-color: red;
+    border-width: 0px;
+    border-radius: 8px;
+}
+
+/*Quick Food Menu Styling*/
+.qf-header-part{
+    background-color: black;
+}
+
+.qf-menu-main-head {
+    background-color: black;
+    font-size: 33px;
+    color: red;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-menu-section {
+    background-color: black;
+}
+
+.qf-menu-card-head {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-menu-item {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.delete-icon {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+    cursor: pointer;
+}
+
+.qf-foodcart-order-btn{
+    font-size: 22px;
+    height: 44px;
+    width: 222px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-family: "Balsamiq Sans", sans-serif;
+    border-width: 0px;
+    border-radius: 11px;
+}
+
+.qf-foodOrders-head{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-order-Div{
+    border-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin: 22px;
+
+    text-align: center;
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+    text-decoration: underline;
+
+}
+
+.qf-back-icon{
+    float: left;
+    color: red;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.qf-delete-order-icon{
+    color: red;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/*Add button functinality*/
+#interactive-icon {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate {
+    animation: grow 1s forwards;
+}
+
+/*Quick Food Services and Contact Us Styling*/
+.qf-menu-main-head {
+    background-color: black;
+    font-size: 33px;
+    color: red;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-services-section {
+    background-color: black;
+}
+
+.qf-services-card-para {
+    font-size: 22px;
+    color: red;
+    font-weight: bold;
+    font-family: "Balsamiq Sans", sans-serif;
+}
+
+.qf-span-head {
+    color: white;
+    font-size: 17px;
+}
+
+.qf-contacts-card {
+    background-color: black;
+    height: 88px;
+}
+
+.qf-contacts-card-icons {
+    font-size: 22px;
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.qf-contacts-card-copyright {
+    background-color: black;
+}
+
+#qf-contacts-card-copyright-text {
+    font-size: 17px;
+    color: white;
+    font-family: "Balsamiq Sans", sans-serif;
+}
