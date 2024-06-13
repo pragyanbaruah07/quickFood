@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Food</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="quickfoodmain.css">
+    <script src="https://kit.fontawesome.com/dcb56fa4e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="sectionQfHome">
+    <!--Quick Food Main Navbar-->
+    <div id="">
+        <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: black;">
+            <a class="navbar-brand" href="#">
+                <h1 class="qf-nav-head">Quick
+                    <span class="qf-nav-span-head">Food</span>
+                </h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#qfHomeBanner">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#qfMenu">Our Menu</a>
+                    <a class="nav-link" href="#" onclick="display('sectionQfFoodCart')">Food Cart</a>
+                    <a class="nav-link" href="#" onclick="display('sectionQfPrevOrders')">Prev Orders</a>
+                    <a class="nav-link" href="#qfServices">Our Services</a>
+                    <a class="nav-link" href="#qfContactUs">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+        <!--Quick Food Main Home Banner-->
+        <div id="qfHomeBanner">
+        <div class="qf-banner-section py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                        <div class="qf-banner-card-1 text-center text-md-left">
+                            <h1 class="qf-banner-card-head">Welcome To <span class="qf-nav-head">Quick Food</span></h1>
+                            <div class="d-none d-md-block text-left">
+                                <p class="qf-banner-card-para">
+                                    Indulge in culinary excellence at Quick Food, where every dish is a masterpiece crafted with passion and precision.
+                                </p>
+                                <a href="#qfMenu">
+                                <button class="qf-banner-card-btn">
+                                    Explore Menu
+                                </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-12 col-md-6">
+                        <div class="qf-banner-card-2 p-3">
+                            <img class="w-100 rounded" src="https://img.freepik.com/free-photo/forkful-steaming-spaghetti-with-shiny-noodles-hint-tomato-sauce_157027-4040.jpg?w=996&t=st=1710850866~exp=1710851466~hmac=35999fe19e4664c219502db1c888e211783824846ceeb542c8c5293c40d09e17">
+                        </div>
+                        <div class="d-block d-md-none text-center">
+                            <p class="qf-banner-card-para">
+                                Indulge in culinary excellence at Quick Food, where every dish is a masterpiece crafted with passion and precision.
+                            </p>
+                            <button class="qf-banner-card-btn">
+                                Explore Menu
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--Quick Food Menu Section-->
+    <div id="qfMenu">
+        <h1 class="qf-menu-main-head p-3 text-center">Our <span class="qf-span-nav-head">Menu</span></h1>
+    <div class="qf-menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="qf-menu-card p-3">
+                        <img class="w-100 rounded" src="https://img.freepik.com/free-photo/chicken-skewers-with-slices-sweet-peppers-dill_2829-18809.jpg?t=st=1711014891~exp=1711018491~hmac=59b6a46d18b6d303d244660d665d9ae62140c508f48141e736ac2f417bc866af&w=740">
+                        <hr class="bg-white">
+                        <div class="d-flex flex-row">
+                            <p class="qf-menu-card-head p-3">Starters</p>
+                            <i data-toggle="modal" data-target="#qf-menu-starter" class="fa-solid fa-arrow-right pt-4" style="color: red; cursor: pointer;"></i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="qf-menu-starter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content qf-menu-section">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title qf-menu-card-head" id="exampleModalLabel">Starters Menu</h5>
+                                            <button type="button bg-light" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-s1" class="qf-menu-item">Paneer Tikka -Rs <span id="qf-starter-s1" class="qf-menu-card-head">100</span></p>
+                                                    <i id="add-menu-s1" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-s2" class="qf-menu-item">Baby Corn -Rs <span id="qf-starter-s2" class="qf-menu-card-head">120</span></p>
+                                                    <i id="add-menu-s2" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-s3" class="qf-menu-item">Onion Pakoda -Rs <span id="qf-starter-s3" class="qf-menu-card-head">80</span> (6 Pcs)</p>
+                                                    <i id="add-menu-s3" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-s4" class="qf-menu-item">Paneer Pakoda -Rs <span id="qf-starter-s4" class="qf-menu-card-head">90</span> (5 pcs)</p>
+                                                    <i id="add-menu-s4" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-s5" class="qf-menu-item">Veg Salad -Rs <span id="qf-starter-s5" class="qf-menu-card-head">60</span></p>
+                                                    <i id="add-menu-s5" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-s6" class="qf-menu-item">Chicken Pakoda -Rs <span id="qf-starter-s6" class="qf-menu-card-head">120</span>(6 pcs)</p>
+                                                    <i id="add-menu-s6" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="qf-menu-card p-3">
+                        <img class="w-100 rounded" src="https://img.freepik.com/free-photo/front-view-natural-organic-fuit-juices-bottles-served-with-tubes-wooden-cutting-board_140725-94521.jpg?t=st=1711015468~exp=1711019068~hmac=eaeec48d1b43200c3ab453d8d7f99a1cb9de87f025971b062a8dac5d899a0630&w=740">
+                        <hr class="bg-white">
+                        <div class="d-flex flex-row">
+                            <p class="qf-menu-card-head p-3">Juices & Cold Drinks</p>
+                            <i data-toggle="modal" data-target="#qf-menu-juice" class="fa-solid fa-arrow-right pt-4" style="color: red; cursor: pointer;"></i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="qf-menu-juice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content qf-menu-section">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title qf-menu-card-head" id="exampleModalLabel">Starters Menu</h5>
+                                            <button type="button bg-light" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-d1" class="qf-menu-item">Orange Juice -Rs <span id="qf-juice-1" class="qf-menu-card-head">50</span></p>
+                                                    <i id="add-menu-d1" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-d2" class="qf-menu-item">Mango Juice -Rs <span id="qf-juice-2" class="qf-menu-card-head">50</span></p>
+                                                    <i id="add-menu-d2" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-d3" class="qf-menu-item">Mixed Fruit Juice -Rs <span id="qf-juice-3" class="qf-menu-card-head">60</span></p>
+                                                    <i id="add-menu-d3" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-d4" class="qf-menu-item">Virgin Mojito -Rs <span id="qf-juice-4" class="qf-menu-card-head">90</span></p>
+                                                    <i id="add-menu-d4" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-d5" class="qf-menu-item">Sprite -Rs <span id="qf-juice-5" class="qf-menu-card-head">60</span></p>
+                                                    <i id="add-menu-d5" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-d6" class="qf-menu-item">Coca Cola -Rs <span id="qf-juice-6" class="qf-menu-card-head">120</span></p>
+                                                    <i id="add-menu-d6" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="qf-menu-card p-3">
+                        <img class="w-100 rounded" src="https://img.freepik.com/free-photo/exploding-burger-with-vegetables-melted-cheese-black-background-generative-ai_157027-1734.jpg?t=st=1711015644~exp=1711019244~hmac=1a7785832aed1b71783ff4089c9a032fe2cb139d8885dbe0cc82e870406e1905&w=826">
+                        <hr class="bg-white">
+                        <div class="d-flex flex-row">
+                            <p class="qf-menu-card-head p-3">Noodles & Fast Food</p>
+                            <i data-toggle="modal" data-target="#qf-menu-fastfood" class="fa-solid fa-arrow-right pt-4" style="color: red; cursor: pointer;"></i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="qf-menu-fastfood" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content qf-menu-section">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title qf-menu-card-head" id="exampleModalLabel">Starters Menu</h5>
+                                            <button type="button bg-light" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-f1" class="qf-menu-item">Arabiata Pasta -Rs <span id="qf-ffood-1" class="qf-menu-card-head">100</span></p>
+                                                    <i id="add-menu-f1" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-f2" class="qf-menu-item">Alfresco Pasta -Rs <span id="qf-ffood-2" class="qf-menu-card-head">100</span></p>
+                                                    <i id="add-menu-f2" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-f3" class="qf-menu-item">Veg Chowmein -Rs <span id="qf-ffood-3" class="qf-menu-card-head">60</span></p>
+                                                    <i id="add-menu-f3" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-f4" class="qf-menu-item">Chicken Chowmein -Rs <span id="qf-ffood-4" class="qf-menu-card-head">90</span></p>
+                                                    <i id="add-menu-f4" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-f5" class="qf-menu-item">Aloo Tikki Burger -Rs <span id="qf-ffood-5" class="qf-menu-card-head">60</span></p>
+                                                    <i id="add-menu-f5" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-f6" class="qf-menu-item">Chicken Burger -Rs <span id="qf-ffood-6" class="qf-menu-card-head">80</span></p>
+                                                    <i id="add-menu-f6" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="qf-menu-card p-3">
+                        <img class="w-100 rounded" src="https://img.freepik.com/free-photo/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai_188544-13382.jpg?t=st=1711015741~exp=1711019341~hmac=19b5a6ac68e7ab706499832986de4db6412c1dadfe4e77e94d0caca092ae0b05&w=826">
+                        <hr class="bg-white">
+                        <div class="d-flex flex-row">
+                            <p class="qf-menu-card-head p-3">Indian Cuisine</p>
+                            <i data-toggle="modal" data-target="#qf-indian-cuisine" class="fa-solid fa-arrow-right pt-4" style="color: red; cursor: pointer;"></i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="qf-indian-cuisine" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content qf-menu-section">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title qf-menu-card-head" id="exampleModalLabel">Starters Menu</h5>
+                                            <button type="button bg-light" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-i1" class="qf-menu-item">North Indian Veg Thali -Rs <span id="qf-i-1" class="qf-menu-card-head">120</span></p>
+                                                    <i id="add-menu-i1" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-i2" class="qf-menu-item">North Indian Non-Veg Thali -Rs <span id="qf-i-2" class="qf-menu-card-head">150</span></p>
+                                                    <i id="add-menu-i2" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-i3" class="qf-menu-item">Ethinic Assamese Thali -Rs <span id="qf-i-3" class="qf-menu-card-head">150</span></p>
+                                                    <i id="add-menu-i3" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-i4" class="qf-menu-item">South Indian Thali -Rs <span id="qf-i-4" class="qf-menu-card-head">150</span></p>
+                                                    <i id="add-menu-i4" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-i5" class="qf-menu-item">Maharaja Shahee Thali -Rs <span id="qf-i-5" class="qf-menu-card-head">180</span></p>
+                                                    <i id="add-menu-i5" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-i6" class="qf-menu-item">Authentic Hyderabadi Biryani -Rs <span id="qf-i-6" class="qf-menu-card-head">200</span></p>
+                                                    <i id="add-menu-i6" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="qf-menu-card p-3">
+                        <img class="w-100 rounded" src="https://img.freepik.com/free-photo/delicious-pakistani-dish-high-angle_23-2148825127.jpg?t=st=1711015849~exp=1711019449~hmac=7b74dfb3e2553273d68027935abfde7e0b18f9f31796958ff626a067e1bccf18&w=740">
+                        <hr class="bg-white">
+                        <div class="d-flex flex-row">
+                            <p class="qf-menu-card-head p-3">Veg</p>
+                            <i data-toggle="modal" data-target="#qf-veg" class="fa-solid fa-arrow-right pt-4" style="color: red; cursor: pointer;"></i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="qf-veg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content qf-menu-section">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title qf-menu-card-head" id="exampleModalLabel">Starters Menu</h5>
+                                            <button type="button bg-light" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-v1" class="qf-menu-item">Nun -Rs <span id="qf-v-1" class="qf-menu-card-head">10</span> (1pc)</p>
+                                                    <i id="add-menu-v1" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-v2" class="qf-menu-item">Plain Rice -Rs <span id="qf-v-2" class="qf-menu-card-head">60</span></p>
+                                                    <i id="add-menu-v2" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-v3" class="qf-menu-item">Dal Tadka -Rs <span id="qf-v-3" class="qf-menu-card-head">70</span></p>
+                                                    <i id="add-menu-v3" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-v4" class="qf-menu-item">Shahee Paneer -Rs <span id="qf-v-4" class="qf-menu-card-head">100</span></p>
+                                                    <i id="add-menu-v4" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-v5" class="qf-menu-item">Rajma-Chawal -Rs <span id="qf-v-5" class="qf-menu-card-head">100</span></p>
+                                                    <i id="add-menu-v5" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-v6" class="qf-menu-item">Mix Veg -Rs <span id="qf-v-6" class="qf-menu-card-head">80</span></p>
+                                                    <i id="add-menu-v6" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="qf-menu-card p-3">
+                        <img class="w-100 rounded" src="https://img.freepik.com/free-photo/homemade-meal-cooked-poultry-fresh-vegetable-celebration-generated-by-ai_188544-13375.jpg?t=st=1711016009~exp=1711019609~hmac=abefd9e4bc250fa426063987da088772a3e70a0a72b323155c447fc2df582ce5&w=826">
+                        <hr class="bg-white">
+                        <div class="d-flex flex-row">
+                            <p class="qf-menu-card-head p-3">Non-Veg</p>
+                            <i data-toggle="modal" data-target="#qf-non-veg" class="fa-solid fa-arrow-right pt-4" style="color: red; cursor: pointer;"></i>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="qf-non-veg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content qf-menu-section">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title qf-menu-card-head" id="exampleModalLabel">Starters Menu</h5>
+                                            <button type="button bg-light" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-nv1" class="qf-menu-item">Butter Nun -Rs <span id="qf-nv-1" class="qf-menu-card-head">15</span> (1 pc)</p>
+                                                    <i id="add-menu-nv1" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-nv2" class="qf-menu-item">Chicken Pulau -Rs <span id="qf-nv-2" class="qf-menu-card-head">80</span></p>
+                                                    <i id="add-menu-nv2" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-nv3" class="qf-menu-item">Chicken Butter Masala -Rs <span id="qf-nv-3" class="qf-menu-card-head">180</span> (6 pcs)</p>
+                                                    <i id="add-menu-nv3" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-nv4" class="qf-menu-item">Chicken Tandori -Rs <span id="qf-nv-4" class="qf-menu-card-head">120</span> (6 pcs)</p>
+                                                    <i id="add-menu-nv4" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-nv5" class="qf-menu-item">Steamed Fish -Rs <span id="qf-nv-5" class="qf-menu-card-head">100</span> (4 pcs)</p>
+                                                    <i id="add-menu-nv5" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                            <div class="qf-menu-item-div">
+                                                <div class="d-flex flex-row">
+                                                    <p id="add-menu-name-nv6" class="qf-menu-item">Fish Curry -Rs <span id="qf-nv-6" class="qf-menu-card-head">150</span> (6 pcs)</p>
+                                                    <i id="add-menu-nv6" class="qf-menu-item fa-solid fa-plus pt-2 ml-auto" style="font-size: 22px; cursor:pointer"></i>
+                                                </div>
+                                                <hr class="bg-white">
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Quick Food Main Services Section-->
+    <div id="qfServices">
+        <h1 class="qf-menu-main-head p-3 text-center">Our <span class="qf-span-nav-head">Services</span></h1>
+    <div class="qf-services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="qf-services-card p-3 text-center">
+                        <img class="w-25 rounded" src="https://img.freepik.com/free-photo/waiter-holding-platter-iskender-kebab-served-with-yoghurt-vegetable-slices_140725-5254.jpg?w=740&t=st=1711017492~exp=1711018092~hmac=d5930ec4c9376b0e16cf19c9fe1c165e5b46edb47cc1e06da991c062c5d5d148">
+                        <p class="qf-services-card-para pt-3">Quick Serving Food: </p>
+                        <p class="qf-span-head">
+                            Savor the swift delight of our meticulously curated selection of quick bites, where quality meets convenience in every mouthwatering dish.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="qf-services-card p-3 text-center">
+                        <img class="w-25 rounded" src="https://img.freepik.com/free-photo/food-delivery-boy-driving-scooter-with-box-with-food-wearing-mask_1303-27713.jpg?t=st=1711018027~exp=1711021627~hmac=130c881bf42d56a06528d806a1e35b5b6a340d6ea242ffabad6b088f0863a05c&w=740">
+                        <p class="qf-services-card-para pt-3">Home delivery: </p>
+                        <p class="qf-span-head">
+                            Experience the ease of home delivery with our seamless service, bringing quality cuisine straight to your doorstep for ultimate convenience and satisfaction.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="qf-services-card p-3 text-center">
+                        <img class="w-25 rounded" src="https://img.freepik.com/free-photo/person-paying-second-hand-market_23-2149353734.jpg?t=st=1711017850~exp=1711021450~hmac=3ac74f70df6e31d73ed375d0ad2d39e200b6e65117d431e1112a052ccb64d0ae&w=740">
+                        <p class="qf-services-card-para pt-3">Cashless Payments: </p>
+                        <p class="qf-span-head">
+                            Enjoy the ease and security of our cashless payment system, where convenience meets peace of mind, ensuring seamless transactions with every purchase.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Quick Food Contact Us Section-->
+    <div id="qfContactUs">
+        <h1 class="qf-menu-main-head p-3 text-center">Contact <span class="qf-span-nav-head">Us</span></h1>
+        <div style="background-color: black;">
+            <div class="qf-contacts-card d-flex flex-column justify-content-end">
+                <div class="qf-contacts-mini-card d-flex flex-row justify-content-center">
+                    <a href="https://www.linkedin.com/in/pragyan-baruah/" target="_blank">
+                        <i class="fa-brands fa-linkedin-in qf-contacts-card-icons"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-instagram qf-contacts-card-icons"></i>
+                    </a>
+                    <a href="" target="_blank">
+                        <i class="fa-brands fa-x-twitter qf-contacts-card-icons"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="qf-contacts-card-copyright text-center p-3">
+                <hr class="bg-white">
+                <i class="fa-regular fa-copyright qf-contacts-card-icons">
+                    <span id="qf-contacts-card-copyright-text">All copyrights reserved to Quick Food - Created by Pragyan</span>
+                </i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--Quick Food Food Cart Section-->
+    <div id="sectionQfFoodCart">
+        <h1 class="qf-menu-main-head p-3 text-center">Food <span class="qf-span-nav-head">Cart</span></h1>
+    <div class="qf-foodcart-container" id="qfFoodCartContainer">
+        <h1 id="jsCheck" class="text-white text-center p-3 d-none">Your Food Cart at the moment is empty</h1>
+    </div>
+    <div class="qf-foodcart-bill-section p-3" id="qfFoodCartBillSection" style="background-color: black;">
+        <hr class="bg-white">
+        <div class="d-flex flex-row">
+            <h1 id="calculateBill" class="qf-menu-main-head p-3 text-center" style="cursor: pointer">
+                ToTal Bill
+            </h1>
+            <p id="showBill" class="qf-menu-item ml-auto p-3"></p>
+        </div>
+        <hr class="bg-white">
+        <div class="text-center">
+            <button class="qf-back-button qf-foodcart-order-btn m-2" onclick="display('sectionQfHome')">Go back</button>
+            <button id="qfFoodcartOrderBtn" class="qf-foodcart-order-btn" onclick="display('sectionQfPrevOrders')">Place Order</button>
+        </div>
+    </div>
+    </div>
+
+    <!--Quick Food Previous Orders Section-->
+    <div id="sectionQfPrevOrders">
+        <div class="qf-header-part d-flex flex-row justify-content-center">
+            <i class="fa-solid fa-arrow-left qf-back-icon p-4" onclick="display('sectionQfHome')"></i>   
+            <h1 class="qf-menu-main-head p-3">My <span class="qf-span-nav-head">Orders</span></h1>
+            <i class="fa-solid fa-trash qf-delete-order-icon p-4" id="qf-foodcart-delete-order"></i>
+        </div>
+        <div class="qf-foodOrders-section p-3" style="background-color: black;">
+            <hr class="bg-white">
+            <div id="qfFoodOrdersSection">
+                
+            </div>
+            <div class="p-3 d-flex flex-row justify-content-center fixed-bottom">
+                <button class="qf-back-button qf-foodcart-order-btn" onclick="display('sectionQfHome')">Go back</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script src="quickfoodmain.js"></script>
+</body>
+</html>
